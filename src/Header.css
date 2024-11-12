@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  padding: 10px;
+  padding-inline: 20px;
+  border: 4px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: var(--border-color);
+  margin: 10px;
+  justify-content: center;
+}
+
+.HeaderNav {
+  display: inline-flex;
+}
+
+.HeaderLink {
+  padding-inline: 10px;
+  &:hover {
+    color: rgb(60, 144, 227);
+  }
+}
