@@ -1,5 +1,5 @@
 import "./Header.css";
-import { ThemeToggle } from "./components/ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   return (

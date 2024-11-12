@@ -21,7 +21,7 @@ export function ThemeToggle() {
   };
 
   return (
-    <a onClick={toggleTheme} className="HeaderLink">
+    <a onClick={toggleTheme} className="HeaderLink NoSelectable">
       {theme === "light" ? "☀️" : "🌙"}
     </a>
   );

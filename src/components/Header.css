@@ -1,17 +1,17 @@
 header {
   display: flex;
-  padding: 10px;
-  padding-inline: 20px;
+  justify-content: center;
   border: 4px;
   border-style: solid;
   border-radius: 100px;
   border-color: var(--border-color);
   margin: 10px;
-  justify-content: center;
+  max-width: fit-content;
 }
 
 .HeaderNav {
   display: inline-flex;
+  user-select: none;
 }
 
 .HeaderLink {

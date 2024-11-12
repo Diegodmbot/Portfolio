@@ -2,11 +2,15 @@
   --color-scheme: light;
   color: var(--text-color);
   background-color: var(--background-color);
-  justify-items: center;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 :root.light {
   --background-color: #f9f9f9;
+  --green-background-color: #a6e0b2;
   --text-color: #333;
   --border-color: #a9aaae;
 }
@@ -15,6 +19,7 @@
   --background-color: #333;
   --text-color: rgba(255, 255, 255);
   --border-color: #a9aaae;
+  --green-background-color: #3a7c48;
 }
 
 body {
