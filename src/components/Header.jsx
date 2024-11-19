@@ -7,7 +7,13 @@ export function Header() {
       <nav className="HeaderNav">
         <a className="HeaderLink">About me</a>
         <a className="HeaderLink">Projects</a>
-        <a className="HeaderLink">Download CV</a>
+        <a
+          className="HeaderLink"
+          href="/Diego_Díaz_Morón_CV.pdf"
+          download={"Diego_Díaz_Morón_CV.pdf"}
+        >
+          Download CV
+        </a>
         <ThemeToggle />
       </nav>
     </header>

@@ -7,6 +7,9 @@ header {
   border-color: var(--border-color);
   margin: 10px;
   max-width: fit-content;
+  position: sticky;
+  top: 5px;
+  background-color: var(--background-color);
 }
 
 .HeaderNav {
@@ -16,7 +19,11 @@ header {
 
 .HeaderLink {
   padding-inline: 10px;
+  cursor: pointer;
   &:hover {
     color: rgb(60, 144, 227);
+  }
+  &:link {
+    text-decoration: none;
   }
 }
