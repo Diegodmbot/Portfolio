@@ -1,0 +1,15 @@
+.Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SkillsOptions {
+  justify-content: space-between;
+}
+
+.SkillsOptions > button {
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}

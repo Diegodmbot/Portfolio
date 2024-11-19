@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 40rem;
+  width: 100%;
+  font-size: 20px;
 }
 
 :root.light {
@@ -25,6 +28,8 @@
 body {
   color: var(--text-color);
   background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
 }
 
 a {
