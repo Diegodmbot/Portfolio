@@ -16,3 +16,11 @@
   color: var(--text-color);
   border-color: var(--border-color);
 }
+
+.Project img {
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
