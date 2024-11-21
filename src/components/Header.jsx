@@ -5,8 +5,9 @@ export function Header() {
   return (
     <header>
       <nav className="HeaderNav">
+        <a className="HeaderLink">Experience</a>
+        <a className="HeaderLink">Projects & Skills</a>
         <a className="HeaderLink">About me</a>
-        <a className="HeaderLink">Projects</a>
         <a
           className="HeaderLink"
           href="/Diego_Díaz_Morón_CV.pdf"
