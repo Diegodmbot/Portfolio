@@ -1,0 +1,23 @@
+.Job {
+  & h2 {
+    margin-bottom: 0px;
+  }
+  & h3 {
+    margin: auto 0px;
+  }
+  & time {
+    font-size: 0.8em;
+  }
+
+  & p {
+    font-size: 16px;
+  }
+}
+
+.Job .Title {
+  display: grid;
+  align-items: baseline;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}

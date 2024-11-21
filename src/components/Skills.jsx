@@ -1,4 +1,5 @@
 import "./Skills.css";
+
 export function Skills() {
   // Hacer una cuadricula con los logos de las herramientas/lenguajes que sé
 
