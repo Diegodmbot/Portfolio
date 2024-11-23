@@ -4,7 +4,18 @@
     "tag": "GameDev",
     "description": "Game prototype made with Godot Engine. Using algorithms, the game generates a new map (and rooms) every time the player start a new game. The map consists of runs connected by a door. The player can move between runs and fight enemies. The size and shape of every room is random.",
     "image": "/TPG.png",
-    "tools": ["Godot", "C#"],
+    "tools": [
+      {
+        "name": "Godot",
+        "id": 1,
+        "url": "https://godotengine.org/"
+      },
+      {
+        "name": "C#",
+        "id": 2,
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      }
+    ],
     "links": [
       {
         "name": "Download",
@@ -13,6 +24,39 @@
       {
         "name": "Code",
         "url": "https://github.com/Diegodmbot/TFG-Procedural_Content_Generation_Godot"
+      }
+    ]
+  },
+  {
+    "title": "PokemonInfo",
+    "web": "Web",
+    "description": "Web application that shows information about all Pokemons. The user can search for a Pokemon by name. The app shows the Pokémon's name and image, on click it shows the Pokémon's number, type, and stats.",
+    "image": "/PokemonInfo.png",
+    "tools": [
+      {
+        "name": "React",
+        "id": 3,
+        "url": "https://reactjs.org/"
+      },
+      {
+        "name": "CSS",
+        "id": 4,
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "HTML",
+        "id": 5,
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      }
+    ],
+    "links": [
+      {
+        "name": "Web",
+        "url": "https://pokemon-info-five.vercel.app/"
+      },
+      {
+        "name": "Code",
+        "url": "https://github.com/Diegodmbot/PokemonInfo"
       }
     ]
   }

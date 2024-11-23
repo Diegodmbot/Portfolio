@@ -4,17 +4,27 @@
   align-items: center;
 }
 
-.ProjectsOptions {
-  justify-content: space-between;
+.ProjectList {
+  list-style: none;
 }
 
-.ProjectsOptions > button {
-  margin: 0 10px;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: var(--background-color);
-  color: var(--text-color);
+.Project {
+  /* border: 3px solid;
   border-color: var(--border-color);
+  border-radius: 10px; */
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.Project section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 18px;
+  & > * {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
 }
 
 .Project img {

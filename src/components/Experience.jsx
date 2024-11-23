@@ -2,6 +2,7 @@ import experienceData from "../data/experience.json";
 import PropTypes from "prop-types";
 import { useJobs } from "../hooks/useJobs.js";
 import "./Experience.css";
+
 function ListOfJobs({ jobList }) {
   return (
     <ul>
@@ -35,7 +36,7 @@ export function Experience() {
   const { jobs } = useJobs(experienceData);
 
   return (
-    <div>
+    <div id="experience">
       <h1>Experience</h1>
       <ListOfJobs jobList={jobs} />
     </div>
