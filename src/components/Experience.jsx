@@ -36,7 +36,7 @@ export function Experience() {
   const { jobs } = useJobs(experienceData);
 
   return (
-    <div id="experience">
+    <div id="experience" className="Experience">
       <h1>Experience</h1>
       <ListOfJobs jobList={jobs} />
     </div>

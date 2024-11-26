@@ -9,13 +9,14 @@
   max-width: 50rem;
   width: 100%;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 :root.light {
   --background-color: #f9f9f9;
-  --green-background-color: #a6e0b2;
   --text-color: #333;
   --border-color: #a9aaae;
+  --green-background-color: #a6e0b2;
 }
 
 :root.dark {

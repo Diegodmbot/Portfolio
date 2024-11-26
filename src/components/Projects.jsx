@@ -1,6 +1,7 @@
 import "./Projects.css";
 import projectsData from "../data/projects.json";
 import { useState } from "react";
+
 export function Projects() {
   const [projects] = useState(projectsData);
 
@@ -14,23 +15,28 @@ export function Projects() {
               <img src={project.image} alt={project.title} />
               <section>
                 <h2>{project.title}</h2>
-                <p>{project.description}</p>
                 <div className="Tags">
                   {project.tools.map((tool) => {
+                    // Podría moverse a un componente aparte para que cada tag tuviera un color distinto
                     return (
-                      <a key={tool.id} href={tool.url}>
+                      <span key={tool.id} className="Tag">
                         {tool.name}
-                      </a>
+                      </span>
                     );
                   })}
                 </div>
+                <p>{project.description}</p>
               </section>
               <nav className="Links">
                 {project.links.map((link, index) => {
                   return (
-                    <a href={link.url} key={index}>
+                    <button
+                      href={link.url}
+                      key={index}
+                      onClick={() => window.open(link.url, "_black")}
+                    >
                       {link.name}
-                    </a>
+                    </button>
                   );
                 })}
               </nav>
