@@ -21,8 +21,10 @@ export function ThemeToggle() {
   };
 
   return (
-    <a onClick={toggleTheme} className="HeaderLink NoSelectable">
-      {theme === "light" ? "☀️" : "🌙"}
-    </a>
+    <img
+      onClick={toggleTheme}
+      className="ThemeSwitcher"
+      src={theme === "light" ? "/sun-icon.svg" : "/moon-icon.svg"}
+    ></img>
   );
 }

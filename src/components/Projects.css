@@ -6,15 +6,16 @@
 
 .ProjectList {
   list-style: none;
+  padding: 0px;
 }
 
 .Project {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   align-items: center;
   &:hover {
-    img {
+    > img {
       max-height: 220px;
       box-shadow: 0 0 10px #8a8a8a;
     }
@@ -49,8 +50,34 @@
   cursor: default;
 }
 
-.Links {
+.LinksNav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.Link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  margin-right: 0.5em;
+  padding: 5px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  background-color: var(--button-color);
+  &:hover {
+    background-color: var(--button-color-hover);
+  }
+  & span {
+    font-size: 1.2em;
+  }
+  & img {
+    width: 2em;
+  }
   & > * {
-    margin-right: 0.5em;
+    margin-right: 10px;
   }
 }
