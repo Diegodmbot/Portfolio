@@ -1,4 +1,9 @@
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
+
 export function Links({ links }) {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <nav className="LinksNav">
       {links.map((link, index) => {
@@ -8,7 +13,9 @@ export function Links({ links }) {
             className="Link"
             onClick={() => window.open(link.url, "_black")}
           >
-            <img src="/Github_dark.svg" />
+            {link.image_code ? (
+              <img src={`${link.image_code}_${theme}.svg`} />
+            ) : null}
             <span>{link.name}</span>
           </button>
         );

@@ -33,7 +33,7 @@
   }
 }
 
-.Project img {
+.Project > img {
   display: block;
   max-width: min-content;
   max-height: 200px;
@@ -76,8 +76,6 @@
   }
   & img {
     width: 2em;
-  }
-  & > * {
     margin-right: 10px;
   }
 }

@@ -2,7 +2,7 @@
   {
     "title": "Procedural Map Generation for Roguelike Games",
     "tag": "GameDev",
-    "description": "Game prototype made with Godot Engine. Using algorithms, the game generates a new map (and rooms) every time the player start a new game. The map consists of runs connected by a door. The player can move between runs and fight enemies. The size and shape of every room is random.",
+    "description": "Game prototype made with Godot Engine. Using algorithms, the game generates a new map (and rooms) every time the player starts a new game. The map consists of rooms which are connected by a door. The player can then move between rooms and fight enemies. The size and shape of every room is randomized.",
     "image": "/TPG.png",
     "tools": [
       {
@@ -19,10 +19,12 @@
     "links": [
       {
         "name": "Web",
+        "image_code": "Itch",
         "url": "https://diegodmbot.itch.io/tpg"
       },
       {
         "name": "Code",
+        "image_code": "Github",
         "url": "https://github.com/Diegodmbot/TFG-Procedural_Content_Generation_Godot"
       }
     ]
@@ -30,7 +32,7 @@
   {
     "title": "PokemonInfo",
     "web": "Web",
-    "description": "Web application that shows information about all Pokemons. The user can search for a Pokemon by name. The app shows the Pokémon's name and image, on click it shows the Pokémon's number, type, and stats.",
+    "description": "Web application which shows information about all Pokemons. The user can search for a Pokemon by name, the app then shows the Pokémon's name and image, on click it shows the Pokémon's number, type, and stats.",
     "image": "/PokemonInfo.png",
     "tools": [
       {
@@ -52,10 +54,12 @@
     "links": [
       {
         "name": "Web",
+        "image_code": "Web",
         "url": "https://pokemon-info-five.vercel.app/"
       },
       {
         "name": "Code",
+        "image_code": "Github",
         "url": "https://github.com/Diegodmbot/PokemonInfo"
       }
     ]

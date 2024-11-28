@@ -11,7 +11,7 @@ export function Introduction() {
         <h2>{"Hi! I'm Diego Díaz Morón"}</h2>
         <p>
           {
-            "I'm a software engineering from Tenerife. Experienced in web development, game development and UX/UI design. I also have a big experience in event coordination and teamworking. Currently part of Python Spain's Board creating community in the Canary Islands and the rest of Spain."
+            "I'm a software engineer based in Tenerife. Experienced in web and game development and UX/UI design. I also have a big experience in event coordination and teamworking. Currently part of Python Spain's Board, creating community in the Canary Islands and the rest of Spain."
           }
         </p>
       </section>
