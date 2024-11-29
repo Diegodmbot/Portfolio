@@ -5,7 +5,12 @@ export function Introduction() {
     <div>
       <div className="Introduction">
         <img className="ProfileIMG" src="/ProfilePic.png" alt="Profile image" />
-        <a className="JobTag">#opentowork</a>
+        <a
+          className="JobTag"
+          href="https://www.linkedin.com/in/diazmorondiego/"
+        >
+          #opentowork
+        </a>
       </div>
       <section>
         <h2>{"Hi! I'm Diego Díaz Morón"}</h2>

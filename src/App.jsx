@@ -4,6 +4,7 @@ import { Introduction } from "./components/Introduction.jsx";
 import { Experience } from "./components/Experience.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
+import { Contacts } from "./components/Contacts.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Introduction />
       <Experience />
       <Projects />
+      <Contacts />
     </ThemeProvider>
   );
 }

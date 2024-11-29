@@ -28,6 +28,7 @@
   background-color: var(--green-background-color);
   position: relative;
   border-radius: 2em;
+  text-decoration: none;
 }
 
 @property --angle {

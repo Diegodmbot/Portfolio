@@ -23,17 +23,16 @@
 }
 
 body {
-  transition: background-color 0.5s ease, color 0.5s ease;
-  color: var(--text-color);
+  transition: background-color 1s ease, background-image 1s ease ,color 1s ease;
   background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
+  /* background-image: linear-gradient(transparent 95%, rgb(116, 116, 124)); */
 }
 
 #root {
   --color-scheme: light;
-  color: var(--text-color);
-  background-color: var(--background-color);
   font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
@@ -41,7 +40,6 @@ body {
   max-width: 50rem;
   width: 100%;
   font-size: 16px;
-  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 a {
