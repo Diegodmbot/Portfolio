@@ -5,6 +5,7 @@
 }
 
 .ProjectList {
+  margin-top: 21px;
   list-style: none;
   padding: 0px;
 }
@@ -16,8 +17,8 @@
   align-items: center;
   &:hover {
     > img {
-      max-height: 220px;
       box-shadow: 0 0 10px #8a8a8a;
+      transform: scale(1.1) translateY(-10%);
     }
   }
 }

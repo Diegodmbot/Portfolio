@@ -15,17 +15,20 @@ export function Contacts() {
     <div className="Contacts">
       <p>Contact me</p>
       <nav>
-        <a href="https://www.linkedin.com/in/diazmorondiego/">
+        <a href="https://www.linkedin.com/in/diazmorondiego/" target="_blank">
           <img src="/LinkedIn_logo.svg" alt="LinkedIn logo" />
         </a>
-        <a href="https://bsky.app/profile/diegodmbot.bsky.social">
+        <a
+          href="https://bsky.app/profile/diegodmbot.bsky.social"
+          target="_blank"
+        >
           <img src="/Bluesky_logo.svg" alt="Bluesky logo" />
         </a>
         <a>
           <img src="/Email_logo.svg" alt="Email logo" onClick={handleCopy} />
         </a>
         {mailCopied && (
-          <p className="CopiedMensage">Text copied to clipboard!</p>
+          <p className="CopiedMensage">Email copied to clipboard!</p>
         )}
       </nav>
     </div>
