@@ -11,6 +11,7 @@ header {
   max-height: min-content;
   position: sticky;
   top: 5px;
+  z-index: 100;
   font-size: 0.8rem;
   padding-top: 2px;
   padding-bottom: 2px;
