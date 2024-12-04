@@ -36,8 +36,8 @@
 
 .Project > img {
   display: block;
-  max-width: min-content;
-  max-height: 200px;
+  max-width: 90%;
+  max-height: min-content;
   border-radius: 20px;
   transition: 0.5s;
 }
