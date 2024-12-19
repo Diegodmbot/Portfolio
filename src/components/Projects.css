@@ -59,6 +59,7 @@
 }
 
 .Link {
+  transition: background-color 1s ease, color 1s ease;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -29,6 +29,7 @@
   position: relative;
   border-radius: 2em;
   text-decoration: none;
+  transition: color 1s ease;
 }
 
 @property --angle {
@@ -47,7 +48,7 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   padding: 3px;
-  background-image: conic-gradient(from var(--angle), transparent 50%, #05d933);
+  background-image: conic-gradient(from var(--angle), transparent 10%, #05d933);
   animation: 2s spin linear infinite;
   border-radius: 2em;
 }
