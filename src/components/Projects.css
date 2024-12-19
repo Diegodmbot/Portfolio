@@ -18,7 +18,7 @@
   &:hover {
     > img {
       box-shadow: 0 0 10px #8a8a8a;
-      transform: scale(1.1) translateY(-10%);
+      transform: scale(1.1) translateY(-5%);
     }
   }
 }
@@ -36,7 +36,8 @@
 
 .Project > img {
   display: block;
-  max-width: 90%;
+  min-width: 300px;
+  max-width: 70%;
   max-height: min-content;
   border-radius: 20px;
   transition: 0.5s;

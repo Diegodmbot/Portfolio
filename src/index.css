@@ -23,12 +23,11 @@
 }
 
 body {
-  transition: background-color 1s ease, background-image 1s ease ,color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
   background-color: var(--background-color);
   color: var(--text-color);
   display: flex;
   justify-content: center;
-  /* background-image: linear-gradient(transparent 95%, rgb(116, 116, 124)); */
 }
 
 #root {
