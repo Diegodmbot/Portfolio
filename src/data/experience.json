@@ -2,8 +2,15 @@
   {
     "company": "Ecovium",
     "position": "Trainee UX/UI designer and web developer",
-    "startDate": "3-2023",
-    "endDate": "5-2023",
+    "startDate": "2023-3",
+    "endDate": "2023-5",
     "description": "I worked in a legacy code project made with Java and HTML. I spent my first month learning the code and making diagrams to understand the structure of the project. I continued designing flowcharts, wireframes and mocks in Figma to understand how users interact with the screens. Finally, I started to develop the project's color theme switcher using Java and HTML."
+  },
+  {
+    "company": "BitBox",
+    "position": "Trainee UX/UI designer and web developer",
+    "startDate": "2025-01",
+    "endDate": "present",
+    "description": "I work in a web application  project as fullstack developer. The project is made with React + TypeScript and Tailwind in the frontend and Spring Boot + Java in the backend. I am responsible for developing new features, fixing bugs, and maintaining the codebase. There is also a older application made with Play Framework + Scala, which I am learning to maintain and develop new features."
   }
 ]
