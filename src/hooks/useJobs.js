@@ -8,18 +8,21 @@ export function useJobs(experienceData) {
     const experience = experienceData;
 
     experience.sort((a, b) => {
-      if (a.endDate === "current") return -1;
+      if (a.endDate === "present") return -1;
       const dateA = new Date(a.endDate);
       const dateB = new Date(b.endDate);
-      return dateB - dateA;
+      console.log(dateB < dateA);
+      return dateA > dateB ? -1 : 1;
     });
     setJobs(experience);
   }, [experienceData]);
 
   const formatedJobs = jobs.map((job) => {
     const formatDate = (date) => {
-      if (date === "current") return "Current";
-      const [month, year] = date.split("-");
+      if (date === null || typeof date !== "string" || date.trim() === "")
+        return "";
+      if (date === "present") return "Present";
+      const [year, month] = date.split("-");
       return `${monthFromNumberToName(month)} ${year}`;
     };
 
