@@ -11,7 +11,6 @@ export function useJobs(experienceData) {
       if (a.endDate === "present") return -1;
       const dateA = new Date(a.endDate);
       const dateB = new Date(b.endDate);
-      console.log(dateB < dateA);
       return dateA > dateB ? -1 : 1;
     });
     setJobs(experience);
