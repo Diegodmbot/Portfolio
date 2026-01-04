@@ -1,11 +1,12 @@
 import { useState } from "react";
+import urlData from "../data/urls.json";
 import "./Contacts.css";
 
 export function Contacts() {
   const [mailCopied, setMailCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("diazmorondiego@gmail.com").then(() => {
+    navigator.clipboard.writeText(urlData.email).then(() => {
       setMailCopied(true);
       setTimeout(() => setMailCopied(false), 1500);
     });
@@ -15,13 +16,10 @@ export function Contacts() {
     <div className="Contacts">
       <p>Contact me</p>
       <nav>
-        <a href="https://www.linkedin.com/in/diazmorondiego/" target="_blank">
+        <a href={urlData.linkedin} target="_blank">
           <img src="/LinkedIn_logo.svg" alt="LinkedIn logo" />
         </a>
-        <a
-          href="https://bsky.app/profile/diegodmbot.bsky.social"
-          target="_blank"
-        >
+        <a href={urlData.bluesky} target="_blank">
           <img src="/Bluesky_logo.svg" alt="Bluesky logo" />
         </a>
         <a>
