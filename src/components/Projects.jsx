@@ -1,7 +1,7 @@
 import "./Projects.css";
 import projectsData from "../data/projects.json";
 import { useState } from "react";
-import { Tags } from "./Tags";
+import { Tools } from "./Tools";
 import { Links } from "./Links";
 
 export function Projects() {
@@ -17,7 +17,7 @@ export function Projects() {
               <img src={project.image} alt={project.title} />
               <section>
                 <h2>{project.title}</h2>
-                <Tags tools={project.tools} />
+                <Tools tools={project.tools} />
                 <p>{project.description}</p>
               </section>
               <Links links={project.links} />
