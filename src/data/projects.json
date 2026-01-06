@@ -4,9 +4,9 @@
     "tag": "GameDev",
     "description": "Game prototype made with Godot Engine. Using algorithms, the game generates a new map (and rooms) every time the player starts a new game. The map consists of rooms which are connected by a door. The player can then move between rooms and fight enemies. The size and shape of every room is randomized.",
     "bullets": [
-      "Implemented procedural map generation using algorithms like random walk and Voronoi diagrams.",
-      "Designed and developed game mechanics including player movement, enemy AI, and combat systems using Godot and C#.",
-      "Created art assets and animations for the game using Aseprite."
+      "Implemented procedural map generation using algorithms like random walk and Voronoi diagrams",
+      "Designed and developed game mechanics including player movement, enemy AI, and combat systems using Godot and C#",
+      "Created art assets and animations for the game using Aseprite"
     ],
     "image": "/TPG.png",
     "tools": [
@@ -37,10 +37,10 @@
     "web": "Web",
     "description": "Web application which shows information about all Pokemons. The user can search for a Pokemon by name, the app then shows the Pokémon's name and image, on click it shows the Pokémon's number, type, and stats.",
     "bullets": [
-      "Developed a responsive web application using React to display Pokémon information.",
-      "Consumed the PokeAPI to fetch and display data dynamically based on user input.",
-      "Implemented search functionality to allow users to find Pokémon by name.",
-      "Implemented third user libraries such as infinite scroll and swiper to improve user experience."
+      "Developed a responsive web application using React to display Pokémon information",
+      "Consumed the PokeAPI to fetch and display data dynamically based on user input",
+      "Implemented search functionality to allow users to find Pokémon by name",
+      "Implemented third user libraries such as infinite scroll and swiper to improve user experience"
     ],
     "image": "/PokemonInfo.png",
     "tools": [

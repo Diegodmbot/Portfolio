@@ -1,0 +1,14 @@
+[
+  { "name": "JavaScript", "category": "Web" },
+  { "name": "HTML", "category": "Web" },
+  { "name": "CSS", "category": "Web" },
+  { "name": "React", "category": "Web" },
+  { "name": "Python", "category": "Backend" },
+  { "name": "Java", "category": "Backend" },
+  { "name": "Git", "category": "Version control" },
+  { "name": "Figma", "category": "Design" },
+  { "name": "Godot", "category": "Game dev" },
+  { "name": "GDScript", "category": "Game dev" },
+  { "name": "Unity", "category": "Game dev" },
+  { "name": "C#", "category": "Game dev" }
+]
