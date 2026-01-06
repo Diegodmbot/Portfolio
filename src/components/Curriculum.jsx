@@ -6,6 +6,7 @@ import {
   Image,
   StyleSheet,
   Link,
+  Font,
 } from "@react-pdf/renderer";
 import miscData from "../data/misc.json";
 import urlData from "../data/urls.json";
@@ -17,11 +18,16 @@ import { removeURLProtocol } from "../services/urlFormatter";
 import { formatExperienceData } from "../services/formatExperienceData";
 import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 
+Font.register({
+  family: "Inter",
+  src: "public/fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+});
+
 const styles = StyleSheet.create({
   page: {
     fontSize: 10,
     padding: 30,
-    fontFamily: "Helvetica",
+    fontFamily: "Inter",
     color: "#1f2937",
   },
   title: {
