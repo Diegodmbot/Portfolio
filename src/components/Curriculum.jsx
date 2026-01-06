@@ -78,10 +78,6 @@ const styles = StyleSheet.create({
     fontSize: 9,
     marginBottom: 2,
   },
-  titleRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
   svgLogo: {
     width: 12,
     height: 12,
@@ -156,7 +152,12 @@ export const Curriculum = () => {
           <Text style={styles.sectionTitle}>Projects</Text>
           {projectsData.map((project, idx) => (
             <View key={idx}>
-              <View style={styles.titleRow}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
                 <Text style={styles.itemTitle}>{project.title}</Text>
                 <View style={{ flexDirection: "row", marginHorizontal: 4 }}>
                   {project.links.map((link) => (
