@@ -7,13 +7,15 @@ import { Contacts } from "./components/Contacts.jsx";
 
 function App() {
   return (
-    <ThemeProvider>
-      <Header />
-      <Introduction />
-      <Experience />
-      <Projects />
-      <Contacts />
-    </ThemeProvider>
+    <>
+      <ThemeProvider>
+        <Header />
+        <Introduction />
+        <Experience />
+        <Projects />
+        <Contacts />
+      </ThemeProvider>
+    </>
   );
 }
 
