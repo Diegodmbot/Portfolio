@@ -5,7 +5,7 @@ export function Tags({ tools }) {
         // get background tag color
 
         return (
-          <span key={tool.id} className="Tag">
+          <span key={tool.name} className="Tag">
             {tool.name}
           </span>
         );

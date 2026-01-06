@@ -7,12 +7,10 @@
     "tools": [
       {
         "name": "Godot",
-        "id": 1,
         "url": "https://godotengine.org/"
       },
       {
         "name": "C#",
-        "id": 2,
         "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
       }
     ],
@@ -37,17 +35,14 @@
     "tools": [
       {
         "name": "React",
-        "id": 3,
         "url": "https://reactjs.org/"
       },
       {
         "name": "CSS",
-        "id": 4,
         "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
         "name": "HTML",
-        "id": 5,
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
       }
     ],
