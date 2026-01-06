@@ -14,7 +14,7 @@ import projectsData from "../data/projects.json";
 import experienceData from "../data/experience.json";
 import skillsData from "../data/skills.json";
 import { removeURLProtocol } from "../services/urlFormatter";
-import { useJobs } from "../hooks/useJobs";
+import { formatExperienceData } from "../services/formatExperienceData";
 import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 
 const styles = StyleSheet.create({
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 });
 
 export const Curriculum = () => {
-  const { jobs } = useJobs(experienceData);
+  const { jobs } = formatExperienceData(experienceData);
   const { categorizedSkills } = orderSkillsByCategory(skillsData);
 
   return (
