@@ -3,14 +3,19 @@ import {
   Page,
   Text,
   View,
+  Image,
   StyleSheet,
   Link,
 } from "@react-pdf/renderer";
 import miscData from "../data/misc.json";
 import urlData from "../data/urls.json";
+import volunteeringData from "../data/volunteering.json";
+import projectsData from "../data/projects.json";
 import experienceData from "../data/experience.json";
+import skillsData from "../data/skills.json";
 import { removeURLProtocol } from "../services/urlFormatter";
 import { useJobs } from "../hooks/useJobs";
+import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 
 const styles = StyleSheet.create({
   page: {
@@ -39,7 +44,6 @@ const styles = StyleSheet.create({
   divider: {
     borderBottomWidth: 1,
     borderBottomColor: "#d1d5db",
-    marginVertical: 8,
   },
   section: {
     marginBottom: 2,
@@ -68,10 +72,21 @@ const styles = StyleSheet.create({
     fontSize: 9,
     marginBottom: 2,
   },
+  titleRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  svgLogo: {
+    width: 12,
+    height: 12,
+    marginRight: 4,
+    marginBottom: 2,
+  },
 });
 
 export const Curriculum = () => {
   const { jobs } = useJobs(experienceData);
+  const { categorizedSkills } = orderSkillsByCategory(skillsData);
 
   return (
     <Document>
@@ -80,11 +95,11 @@ export const Curriculum = () => {
           <Text style={styles.title}>Diego Díaz Morón</Text>
           <Text style={styles.subtitle}>{miscData.role}</Text>
           <View style={styles.contact}>
-            <Text>+34 634 578 063</Text>
+            <Text>{miscData.phoneNumber}</Text>
             <Text>·</Text>
-            <Text>diegodiazmoron@es.python.org</Text>
+            <Text>{urlData.email}</Text>
           </View>
-          <View style={styles.contact}>
+          <View style={[styles.contact, { marginTop: 2 }]}>
             <Link>{removeURLProtocol(urlData.web)}</Link>
             <Text>·</Text>
             <Link>{removeURLProtocol(urlData.linkedin)}</Link>
@@ -92,98 +107,96 @@ export const Curriculum = () => {
             <Link>{removeURLProtocol(urlData.github.profile)}</Link>
           </View>
         </View>
-        <View>
-          <View style={styles.divider} />
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Abstract</Text>
-            <Text style={styles.text}>{miscData.abstract}</Text>
-          </View>
-          <View style={styles.divider} />
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Experience</Text>
-            {jobs.map((job, index) => (
-              <View key={index} style={{ marginBottom: 6 }}>
-                <Text style={styles.itemTitle}>{job.position}</Text>
-                <Text style={styles.itemSubtitle}>
-                  {job.company} · {job.startDate} - {job.endDate}
+        <View style={styles.divider} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Abstract</Text>
+          <Text style={styles.text}>{miscData.abstract}</Text>
+        </View>
+        <View style={styles.divider} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Skills</Text>
+          <View style={{ flexDirection: "row" }}>
+            {Object.entries(categorizedSkills).map(([category, skills]) => (
+              <View key={category} style={{ marginRight: 20 }}>
+                <Text key={category} style={styles.itemTitle}>
+                  {category}
                 </Text>
-                {job.bulletDescription.map((bullet, idx) => (
-                  <Text key={idx} style={styles.bullet}>
-                    • {bullet}
+                {skills.map((skill) => (
+                  <Text key={skill} style={styles.bullet}>
+                    • {skill}
                   </Text>
                 ))}
               </View>
             ))}
           </View>
-
-          {/* PROJECTS */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Projects</Text>
-
-            <Text style={styles.itemTitle}>Procedural Content Generation</Text>
-            <Text style={styles.itemSubtitle}>Final Degree Project · 2024</Text>
-            <Text style={styles.bullet}>
-              • Research on dungeon generation algorithms
-            </Text>
-            <Text style={styles.bullet}>
-              • Roguelite prototype developed in Godot
-            </Text>
-            <Link style={styles.link}>
-              https://github.com/Diegodmbot/TFG-Procedural_Content_Generation_Godot
-            </Link>
-
-            <Text style={[styles.itemTitle, { marginTop: 6 }]}>
-              Pokédex with React
-            </Text>
-            <Text style={styles.itemSubtitle}>2023</Text>
-            <Text style={styles.bullet}>• External APIs consumption</Text>
-            <Text style={styles.bullet}>• Responsive design with CSS</Text>
-            <Text style={styles.bullet}>• Infinite scroll and animations</Text>
-            <Link style={styles.link}>
-              https://github.com/Diegodmbot/PokemonInfo
-            </Link>
-          </View>
-          {/* EDUCATION */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Education</Text>
-            <Text style={styles.itemTitle}>Computer Engineering Degree</Text>
+        </View>
+        <View style={styles.divider} />
+        <Text style={styles.sectionTitle}>Experience</Text>
+        {jobs.map((job, idx) => (
+          <View key={idx} style={{ marginBottom: 6 }}>
+            <Text style={styles.itemTitle}>{job.position}</Text>
             <Text style={styles.itemSubtitle}>
-              Universidad de La Laguna · 2019–2024
+              {job.company} · {job.startDate} - {job.endDate}
             </Text>
-            <Text style={styles.text}>
-              Specialisation in Software Engineering
+            {job.bulletDescription.map((bullet, idx) => (
+              <Text key={idx} style={styles.bullet}>
+                • {bullet}
+              </Text>
+            ))}
+          </View>
+        ))}
+        <View style={styles.divider} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Projects</Text>
+          {projectsData.map((project, idx) => (
+            <View key={idx}>
+              <View style={styles.titleRow}>
+                <Text style={styles.itemTitle}>{project.title}</Text>
+                <View style={{ flexDirection: "row", marginHorizontal: 4 }}>
+                  {project.links.map((link) => (
+                    <Link key={link.url} style={styles.link} src={link.url}>
+                      <Image
+                        style={styles.svgLogo}
+                        src={`${link.image_code}_light.png`}
+                      />
+                    </Link>
+                  ))}
+                </View>
+              </View>
+              {project.bullets.map((bullet, idx) => (
+                <Text key={idx} style={styles.bullet}>
+                  • {bullet}
+                </Text>
+              ))}
+            </View>
+          ))}
+        </View>
+        <View style={styles.divider} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Languages</Text>
+          {miscData.languages.map((language, idx) => (
+            <Text key={idx} style={styles.text}>
+              {language.name}: {language.level}
             </Text>
-          </View>
-
-          {/* SKILLS */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Skills</Text>
-            <Text style={styles.text}>Web: JavaScript, HTML, CSS, React</Text>
-            <Text style={styles.text}>Backend: Python, Java</Text>
-            <Text style={styles.text}>Version control: Git</Text>
-            <Text style={styles.text}>Design: Figma</Text>
-            <Text style={styles.text}>
-              Game dev: Godot, GDScript, Unity, C#
-            </Text>
-          </View>
-
-          {/* LANGUAGES */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Languages</Text>
-            <Text style={styles.text}>Spanish: Native</Text>
-            <Text style={styles.text}>English: Medium</Text>
-          </View>
-
-          {/* VOLUNTEERING */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Volunteering</Text>
-            <Text style={styles.itemTitle}>Python España Treasurer</Text>
-            <Text style={styles.itemSubtitle}>April 2024 – Present</Text>
-            <Text style={styles.bullet}>• Managing association finances</Text>
-            <Text style={styles.bullet}>
-              • Supporting tech event organisation
-            </Text>
-          </View>
+          ))}
+        </View>
+        <View style={styles.divider} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Volunteering</Text>
+          {volunteeringData.map((volunteer, idx) => (
+            <View key={idx}>
+              <Text style={styles.itemTitle}>{volunteer.role}</Text>
+              <Text style={styles.itemSubtitle}>
+                {volunteer.organization} · {volunteer.startDate} -{" "}
+                {volunteer.endDate}
+              </Text>
+              {volunteer.bulletDescription.map((bullet, idx) => (
+                <Text key={idx} style={styles.bullet}>
+                  • {bullet}
+                </Text>
+              ))}
+            </View>
+          ))}
         </View>
       </Page>
     </Document>
