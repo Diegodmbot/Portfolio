@@ -20,7 +20,7 @@ import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 
 Font.register({
   family: "Inter",
-  src: "public/fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+  src: "/fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
 });
 
 const styles = StyleSheet.create({
