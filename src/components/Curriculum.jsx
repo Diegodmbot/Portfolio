@@ -106,7 +106,7 @@ export const Curriculum = () => {
             <Text>·</Text>
             <Link>{removeURLProtocol(urlData.linkedin)}</Link>
             <Text>·</Text>
-            <Link>{removeURLProtocol(urlData.github.profile)}</Link>
+            <Link>{removeURLProtocol(urlData.github)}</Link>
           </View>
         </View>
         <View style={styles.divider} />
