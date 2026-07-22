@@ -3,11 +3,23 @@
     "organization": "Python Spain",
     "role": "Board Treasurer",
     "startDate": "April 2024",
-    "endDate": "Present",
+    "endDate": "April 2026",
     "bulletDescription": [
       "Contributing to the growth and development of the Python community in Spain",
       "Organizing events, workshops, and meetups to promote Python programming",
       "Manage the financial aspects of the organization"
+    ]
+  },
+  {
+    "organization": "Congreso de Estudiantes de Informática",
+    "role": "Organizer and Coordinator",
+    "startDate": "September 2023",
+    "endDate": "January 2025",
+    "bulletDescription": [
+      "Coordinating events, workshops, and meetups to promote programming among university students",
+      "Contacting to sponsors and speakers to ensure the success of the events",
+      "Managing the logistics and operations of the events",
+      "Prepare and deliver talks about programming and technology"
     ]
   }
 ]
