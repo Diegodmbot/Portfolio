@@ -1,16 +1,16 @@
 [
-  { "name": "JavaScript", "category": "Web" },
-  { "name": "HTML", "category": "Web" },
-  { "name": "CSS", "category": "Web" },
-  { "name": "React", "category": "Web" },
-  { "name": "Python", "category": "Language" },
+  { "name": "JavaScript", "category": "Frontend" },
+  { "name": "HTML", "category": "Frontend" },
+  { "name": "CSS", "category": "Frontend" },
+  { "name": "React", "category": "Frontend" },
   { "name": "Java", "category": "Backend" },
-  { "name": "Springboot", "category": "Backend" },
+  { "name": "Springboot 3", "category": "Backend" },
+  { "name": "PostgreSQL", "category": "Data" },
   { "name": "Git", "category": "Version control" },
   { "name": "Figma", "category": "Design" },
   { "name": "Godot", "category": "Game dev" },
   { "name": "GDScript", "category": "Game dev" },
   { "name": "Unity", "category": "Game dev" },
   { "name": "C#", "category": "Game dev" },
-  { "name": "SQL", "category": "Backend" }
+  { "name": "Python", "category": "Language" }
 ]
