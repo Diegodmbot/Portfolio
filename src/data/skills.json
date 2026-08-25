@@ -11,5 +11,6 @@
   { "name": "Godot", "category": "Game dev" },
   { "name": "GDScript", "category": "Game dev" },
   { "name": "Unity", "category": "Game dev" },
-  { "name": "C#", "category": "Game dev" }
+  { "name": "C#", "category": "Game dev" },
+  { "name": "SQL", "category": "Backend" }
 ]
