@@ -4,10 +4,6 @@
   align-items: center;
 }
 
-ul {
-  padding-left: 0px;
-}
-
 .Job {
   & h2 {
     margin-bottom: 0px;

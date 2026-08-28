@@ -18,7 +18,12 @@ export function Projects() {
               <section>
                 <h2>{project.title}</h2>
                 <Tools tools={project.tools} />
-                <p>{project.description}</p>
+                <p>{project.shortDescription}</p>
+                <ul>
+                  {project.bulletDescription.map((bullet, index) => (
+                    <li key={index}>{bullet}</li>
+                  ))}
+                </ul>
               </section>
               <Links links={project.links} />
             </li>

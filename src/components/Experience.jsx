@@ -13,7 +13,11 @@ function ListOfJobs({ jobList }) {
             <time>{`${job.startDate} - ${job.endDate}`}</time>
           </div>
           <h3>{job.position}</h3>
-          <p>{job.description}</p>
+          <ul>
+            {job.bulletDescription.map((bullet, index) => (
+              <li key={index}>{bullet}</li>
+            ))}
+          </ul>
         </li>
       ))}
     </ul>
@@ -28,7 +32,7 @@ ListOfJobs.propTypes = {
       startDate: PropTypes.string.isRequired,
       endDate: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 
