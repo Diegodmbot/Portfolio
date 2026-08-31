@@ -23,9 +23,9 @@ export function Header() {
         <a className="HeaderLink" href="#projects">
           Projects
         </a>
-        <a className="HeaderLink" onClick={downloadCV}>
+        <button className="HeaderLink" onClick={downloadCV}>
           Download CV
-        </a>
+        </button>
         <ThemeToggle />
       </nav>
     </header>
