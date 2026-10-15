@@ -170,7 +170,7 @@ export const Curriculum = () => {
                   ))}
                 </View>
               </View>
-              {project.bullets.map((bullet, idx) => (
+              {project.bulletDescription.map((bullet, idx) => (
                 <Text key={idx} style={styles.bullet}>
                   • {bullet}
                 </Text>
