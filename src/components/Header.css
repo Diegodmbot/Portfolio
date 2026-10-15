@@ -46,7 +46,7 @@ header {
 }
 
 .ThemeSwitcher {
-  padding-inline: 10px;
-  width: 1.1em;
+  display: flex;
+  width: 1.2em;
   fill: white;
 }
