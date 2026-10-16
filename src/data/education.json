@@ -2,6 +2,11 @@
   {
     "degree": "Bachelor of Computer Engineering",
     "institution": "University of La Laguna",
-    "year": "2019-2024"
+    "year": "2019-2024",
+    "project": {
+      "title": "Generación Procedural de Contenido 2D en Videojuegos",
+      "type": "Final Degree Project",
+      "link": "https://riull.ull.es/xmlui/handle/915/39978"
+    }
   }
 ]
