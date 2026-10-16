@@ -9,6 +9,7 @@
   { "name": "Java", "category": "Backend" },
   { "name": "Springboot 3", "category": "Backend" },
   { "name": "Spring Batch", "category": "Backend" },
+  { "name": "SQL", "category": "Data" },
   { "name": "PostgreSQL", "category": "Data" },
   { "name": "Git", "category": "Version control" },
   { "name": "Figma", "category": "Design" },
@@ -16,5 +17,5 @@
   { "name": "GDScript", "category": "Game dev" },
   { "name": "Unity", "category": "Game dev" },
   { "name": "C#", "category": "Game dev" },
-  { "name": "Python", "category": "Language" }
+  { "name": "Python", "category": "Languages" }
 ]

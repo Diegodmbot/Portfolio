@@ -188,6 +188,20 @@ export const Curriculum = () => {
                 <Text style={styles.itemSubtitle}>
                   {education.institution} · {education.year}
                 </Text>
+                {education.project && (
+                  <View>
+                    <Text style={styles.itemSubtitle}>
+                      {education.project.type}:
+                    </Text>
+                    <Link
+                      style={styles.text}
+                      src={education.project.link}
+                      key={education.project.link}
+                    >
+                      {education.project.title}
+                    </Link>
+                  </View>
+                )}
               </View>
             ))}
           </View>
