@@ -14,24 +14,29 @@ import volunteeringData from "../data/volunteering.json";
 import projectsData from "../data/projects.json";
 import experienceData from "../data/experience.json";
 import skillsData from "../data/skills.json";
+import educationData from "../data/education.json";
 import { removeURLProtocol } from "../services/urlFormatter";
 import { formatExperienceData } from "../services/formatExperienceData";
 import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 
 Font.register({
   family: "Inter",
-  src: "/fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+  fonts: [
+    { src: "/fonts/Inter/static/Inter_18pt-Regular.ttf" },
+    { src: "/fonts/Inter/static/Inter_18pt-Bold.ttf", fontWeight: "bold" },
+  ],
 });
 
 const styles = StyleSheet.create({
   page: {
     fontSize: 10,
-    padding: 30,
+    paddingVertical: 24,
+    paddingHorizontal: 30,
     fontFamily: "Inter",
     color: "#1f2937",
   },
   title: {
-    fontSize: 28,
+    fontSize: 22,
     fontWeight: "bold",
   },
   subtitle: {
@@ -50,6 +55,7 @@ const styles = StyleSheet.create({
   divider: {
     borderBottomWidth: 1,
     borderBottomColor: "#d1d5db",
+    marginBottom: 4,
   },
   section: {
     marginBottom: 2,
@@ -57,7 +63,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 11,
     fontWeight: "bold",
-    marginBottom: 6,
+    marginBottom: 3,
     textTransform: "uppercase",
   },
   itemTitle: {
@@ -117,18 +123,12 @@ export const Curriculum = () => {
         <View style={styles.divider} />
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Skills</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
             {Object.entries(categorizedSkills).map(([category, skills]) => (
-              <View key={category} style={{ marginRight: 20 }}>
-                <Text key={category} style={styles.itemTitle}>
-                  {category}
-                </Text>
-                {skills.map((skill) => (
-                  <Text key={skill} style={styles.bullet}>
-                    • {skill}
-                  </Text>
-                ))}
-              </View>
+              <Text key={category} style={[styles.text, { width: "50%" }]}>
+                <Text style={styles.itemTitle}>{category}: </Text>
+                {skills.join(", ")}
+              </Text>
             ))}
           </View>
         </View>
@@ -179,13 +179,26 @@ export const Curriculum = () => {
           ))}
         </View>
         <View style={styles.divider} />
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Languages</Text>
-          {miscData.languages.map((language, idx) => (
-            <Text key={idx} style={styles.text}>
-              {language.name}: {language.level}
-            </Text>
-          ))}
+        <View style={[styles.section, { flexDirection: "row" }]}>
+          <View style={{ width: "50%" }}>
+            <Text style={styles.sectionTitle}>Education</Text>
+            {educationData.map((education, idx) => (
+              <View key={idx}>
+                <Text style={styles.itemTitle}>{education.degree}</Text>
+                <Text style={styles.itemSubtitle}>
+                  {education.institution} · {education.year}
+                </Text>
+              </View>
+            ))}
+          </View>
+          <View style={{ width: "50%" }}>
+            <Text style={styles.sectionTitle}>Languages</Text>
+            {miscData.languages.map((language, idx) => (
+              <Text key={idx} style={styles.text}>
+                {language.name}: {language.level}
+              </Text>
+            ))}
+          </View>
         </View>
         <View style={styles.divider} />
         <View style={styles.section}>
