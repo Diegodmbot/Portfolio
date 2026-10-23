@@ -14,15 +14,15 @@ export function Skills() {
   }, []);
 
   const handleOnClick = (event) => {
-    const selection = event.target.innerText;
+    const selection = event.target;
+    selectedTag?.classList?.remove("selected");
     if (selection === selectedTag) {
       setSkills(skillsData);
       setSelectedTag(null);
-      event.target.classList.remove("selected");
       return;
     }
     const filteredSkills = skillsData.filter(
-      (skill) => skill.category === selection,
+      (skill) => skill.category === selection.innerText,
     );
     event.target.classList.add("selected");
     setSelectedTag(selection);
