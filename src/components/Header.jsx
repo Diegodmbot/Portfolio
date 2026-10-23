@@ -17,6 +17,9 @@ export function Header() {
   return (
     <header>
       <nav className="header-nav">
+        <a className="header-link" href="#skills">
+          Skills
+        </a>
         <a className="header-link" href="#experience">
           Experience
         </a>
