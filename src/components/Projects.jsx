@@ -1,7 +1,6 @@
 import "./Projects.css";
 import projectsData from "../data/projects.json";
 import { useState } from "react";
-import { Tools } from "./Tools";
 import { Links } from "./Links";
 
 export function Projects() {
@@ -17,7 +16,6 @@ export function Projects() {
               <img src={project.image} alt={project.title} />
               <section>
                 <h2>{project.title}</h2>
-                <Tools tools={project.tools} />
                 <p>{project.shortDescription}</p>
                 <ul>
                   {project.bulletDescription.map((bullet, index) => (
