@@ -8,7 +8,9 @@ export function Skills() {
   const skillTags = useMemo(() => {
     const tags = new Set();
     skillsData.forEach((skill) => {
-      tags.add(skill.category);
+      skill.categories.forEach((category) => {
+        tags.add(category);
+      });
     });
     return Array.from(tags);
   }, []);
@@ -21,8 +23,8 @@ export function Skills() {
       setSelectedTag(null);
       return;
     }
-    const filteredSkills = skillsData.filter(
-      (skill) => skill.category === selection.innerText,
+    const filteredSkills = skillsData.filter((skill) =>
+      skill.categories.includes(selection.innerText),
     );
     event.target.classList.add("selected");
     setSelectedTag(selection);

@@ -1,102 +1,102 @@
 [
   {
     "name": "JavaScript",
-    "category": "Frontend",
+    "categories": ["Frontend", "Languages"],
     "image": "https://devicons.io/devicons/icons/javascript.svg"
   },
   {
     "name": "TypeScript",
-    "category": "Frontend",
+    "categories": ["Frontend", "Languages"],
     "image": "https://devicons.io/devicons/icons/typescript-icon.svg"
   },
   {
     "name": "HTML",
-    "category": "Frontend",
+    "categories": ["Frontend", "Languages"],
     "image": "https://devicons.io/devicons/icons/html-5.svg"
   },
   {
     "name": "Tailwind",
-    "category": "Frontend",
+    "categories": ["Frontend"],
     "image": "https://devicons.io/devicons/icons/tailwind-icon.svg"
   },
   {
     "name": "CSS",
-    "category": "Frontend",
+    "categories": ["Frontend", "Languages"],
     "image": "https://devicons.io/devicons/icons/css-3-icon.svg"
   },
   {
     "name": "React",
-    "category": "Frontend",
+    "categories": ["Frontend"],
     "image": "https://devicons.io/devicons/icons/react.svg"
   },
   {
     "name": "Vitest",
-    "category": "Frontend",
+    "categories": ["Frontend"],
     "image": "https://devicons.io/devicons/icons/vitest.svg"
   },
   {
     "name": "Vite",
-    "category": "Frontend",
+    "categories": ["Frontend"],
     "image": "https://devicons.io/devicons/icons/vite.svg"
   },
   {
     "name": "Node.js",
-    "category": "Backend",
+    "categories": ["Backend"],
     "image": "https://devicons.io/devicons/icons/nodejs-icon.svg"
   },
   {
     "name": "Java",
-    "category": "Backend",
+    "categories": ["Backend", "Languages"],
     "image": "https://devicons.io/devicons/icons/java.svg"
   },
   {
     "name": "Springboot 3",
-    "category": "Backend",
+    "categories": ["Backend"],
     "image": "https://cdn.simpleicons.org/springboot"
   },
   {
     "name": "Spring Batch",
-    "category": "Backend",
+    "categories": ["Backend"],
     "image": ""
   },
   {
     "name": "SQL",
-    "category": "Data",
+    "categories": ["Data", "Languages"],
     "image": ""
   },
   {
     "name": "PostgreSQL",
-    "category": "Data",
+    "categories": ["Data"],
     "image": "https://devicons.io/devicons/icons/postgresql.svg"
   },
   {
     "name": "Git",
-    "category": "Version control",
+    "categories": ["Version control"],
     "image": "https://devicons.io/devicons/icons/git-icon.svg"
   },
   {
     "name": "Figma",
-    "category": "Design",
+    "categories": ["Design"],
     "image": "https://devicons.io/devicons/icons/figma.svg"
   },
   {
     "name": "Godot",
-    "category": "Game dev",
+    "categories": ["Game dev"],
     "image": "https://devicons.io/devicons/icons/godot-icon.svg"
   },
   {
     "name": "Unity",
-    "category": "Game dev",
+    "categories": ["Game dev"],
     "image": "https://devicons.io/devicons/icons/unity.svg"
   },
   {
     "name": "C#",
-    "category": "Game dev",
+    "categories": ["Game dev", "Languages"],
     "image": "https://devicons.io/devicons/icons/c-sharp.svg"
   },
   {
     "name": "Python",
-    "category": "Languages",
+    "categories": ["Languages"],
     "image": "https://devicons.io/devicons/icons/python.svg"
   }
 ]
