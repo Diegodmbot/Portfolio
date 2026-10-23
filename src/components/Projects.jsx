@@ -7,12 +7,12 @@ export function Projects() {
   const [projects] = useState(projectsData);
 
   return (
-    <div className="Projects" id="projects">
+    <div className="projects" id="projects">
       <h1>Projects & Skills</h1>
-      <ul className="ProjectList">
+      <ul className="project-list">
         {projects.map((project, index) => {
           return (
-            <li className="Project" key={index}>
+            <li className="project" key={index}>
               <img src={project.image} alt={project.title} />
               <section>
                 <h2>{project.title}</h2>

@@ -1,4 +1,4 @@
-.Contacts {
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@ img {
   width: 100%;
 }
 
-.CopiedMensage {
+.copied-mensage {
   position: fixed;
   bottom: 100px;
   width: fit-content;

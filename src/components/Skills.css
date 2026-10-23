@@ -1,4 +1,4 @@
-.Skills {
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   }
 }
 
-.SkillsFilter {
+.skills-filter {
   font: inherit;
   font-size: small;
   background: none;
@@ -22,17 +22,17 @@
   }
 }
 
-.Selected {
+.selected {
   color: var(--text-color);
   font-weight: bold;
 }
 
-.SkillsSeparator {
+.skills-separator {
   margin-top: 0px;
   margin-bottom: 0.8rem;
 }
 
-.SkillsContainer {
+.skills-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,7 +41,7 @@
   gap: 0.5rem;
 }
 
-.Skill {
+.skill {
   display: flex;
   flex-direction: row;
   align-items: center;

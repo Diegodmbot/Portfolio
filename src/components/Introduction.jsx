@@ -5,9 +5,9 @@ import urlData from "../data/urls.json";
 export function Introduction() {
   return (
     <div>
-      <div className="Introduction">
-        <img className="ProfileIMG" src="/ProfilePic.png" alt="Profile image" />
-        <a className="JobTag" href={urlData.linkedin}>
+      <div className="introduction">
+        <img className="profile-img" src="/ProfilePic.png" alt="Profile image" />
+        <a className="job-tag" href={urlData.linkedin}>
           #opentowork
         </a>
       </div>

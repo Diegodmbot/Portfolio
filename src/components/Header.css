@@ -18,7 +18,7 @@ header {
   padding-bottom: 2px;
 }
 
-.HeaderNav {
+.header-nav {
   display: inline-flex;
   user-select: none;
   & a {
@@ -27,7 +27,7 @@ header {
   }
 }
 
-.HeaderLink {
+.header-link {
   background: none;
   border: none;
   font: inherit;
@@ -45,7 +45,7 @@ header {
   }
 }
 
-.ThemeSwitcher {
+.theme-switcher {
   display: flex;
   width: 1.2em;
   fill: white;

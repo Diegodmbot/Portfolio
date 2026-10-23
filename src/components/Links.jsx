@@ -5,12 +5,12 @@ export function Links({ links }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <nav className="LinksNav">
+    <nav className="links-nav">
       {links.map((link, index) => {
         return (
           <button
             key={index}
-            className="Link"
+            className="link"
             onClick={() => window.open(link.url, "_black")}
           >
             {link.image_code ? (

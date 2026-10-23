@@ -7,8 +7,8 @@ function ListOfJobs({ jobList }) {
   return (
     <ul>
       {jobList.map((job, index) => (
-        <li key={index} className="Job">
-          <div className="Title">
+        <li key={index} className="job">
+          <div className="title">
             <h2>{job.company}</h2>
             <time>{`${job.startDate} - ${job.endDate}`}</time>
           </div>
@@ -40,7 +40,7 @@ export function Experience() {
   const { jobs } = formatExperienceData(experienceData);
 
   return (
-    <div id="experience" className="Experience">
+    <div id="experience" className="experience">
       <h1>Experience</h1>
       <ListOfJobs jobList={jobs} />
     </div>

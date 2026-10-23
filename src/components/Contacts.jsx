@@ -13,7 +13,7 @@ export function Contacts() {
   };
 
   return (
-    <div className="Contacts">
+    <div className="contacts">
       <p>Contact me</p>
       <nav>
         <a href={urlData.linkedin} target="_blank">
@@ -26,7 +26,7 @@ export function Contacts() {
           <img src="/Email_logo.svg" alt="Email logo" onClick={handleCopy} />
         </a>
         {mailCopied && (
-          <p className="CopiedMensage">Email copied to clipboard!</p>
+          <p className="copied-mensage">Email copied to clipboard!</p>
         )}
       </nav>
     </div>

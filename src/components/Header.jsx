@@ -16,14 +16,14 @@ export function Header() {
 
   return (
     <header>
-      <nav className="HeaderNav">
-        <a className="HeaderLink" href="#experience">
+      <nav className="header-nav">
+        <a className="header-link" href="#experience">
           Experience
         </a>
-        <a className="HeaderLink" href="#projects">
+        <a className="header-link" href="#projects">
           Projects
         </a>
-        <button className="HeaderLink" onClick={downloadCV}>
+        <button className="header-link" onClick={downloadCV}>
           Download CV
         </button>
         <ThemeToggle />

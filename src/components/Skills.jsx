@@ -30,19 +30,19 @@ export function Skills() {
   };
 
   return (
-    <div className="Skills" id="skills">
+    <div className="skills" id="skills">
       <h1>Skills</h1>
-      <nav className="SkillsFilternav">
+      <nav className="skills-filternav">
         {skillTags.map((tag) => (
-          <button key={tag} className="SkillsFilter" onClick={handleOnClick}>
+          <button key={tag} className="skills-filter" onClick={handleOnClick}>
             {tag}
           </button>
         ))}
       </nav>
-      <hr className="SkillsSeparator" />
-      <div className="SkillsContainer">
+      <hr className="skills-separator" />
+      <div className="skills-container">
         {skills.map((skill) => (
-          <div key={skill.name} className="Skill">
+          <div key={skill.name} className="skill">
             {skill.image && <img src={skill.image} alt={skill.name} />}
             <p>{skill.name}</p>
           </div>

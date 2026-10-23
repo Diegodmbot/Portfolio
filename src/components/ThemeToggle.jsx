@@ -4,9 +4,9 @@ export function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button className="HeaderLink" onClick={toggleTheme}>
+    <button className="header-link" onClick={toggleTheme}>
       <img
-        className="ThemeSwitcher"
+        className="theme-switcher"
         src={theme === "light" ? "/sun-icon.svg" : "/moon-icon.svg"}
       ></img>
     </button>
