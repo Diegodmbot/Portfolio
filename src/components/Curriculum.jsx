@@ -18,6 +18,7 @@ import educationData from "../data/education.json";
 import { removeURLProtocol } from "../services/urlFormatter";
 import { formatExperienceData } from "../services/formatExperienceData";
 import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
+import { sortCategories } from "../services/sortCategories";
 
 Font.register({
   family: "Inter",
@@ -95,6 +96,7 @@ const styles = StyleSheet.create({
 export const Curriculum = () => {
   const { jobs } = formatExperienceData(experienceData);
   const { categorizedSkills } = orderSkillsByCategory(skillsData);
+  // const sortedCategorizedSkills = sortCategories(categorizedSkills);
 
   return (
     <Document>

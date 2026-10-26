@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import skillsData from "../data/skills.json";
+import { sortCategories } from "../services/sortCategories";
 import "./Skills.css";
 
 export function Skills() {
@@ -38,7 +39,7 @@ export function Skills() {
     <div className="skills" id="skills">
       <h1>Skills</h1>
       <nav className="skills-filternav">
-        {skillTags.map((tag) => (
+        {sortCategories(skillTags).map((tag) => (
           <button
             key={tag}
             className="skills-filter"
