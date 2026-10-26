@@ -15,7 +15,7 @@ export function Skills() {
     return Array.from(tags);
   }, []);
 
-  const handleOnClick = (event) => {
+  const handleFilterOnClick = (event) => {
     const selection = event.target;
     selectedTag?.classList?.remove("selected");
     if (selection === selectedTag) {
@@ -31,12 +31,19 @@ export function Skills() {
     setSkills(filteredSkills);
   };
 
+  const handleSkillOnClick = (docUrl) => () => {
+    window.open(docUrl, "_blank");
+  };
   return (
     <div className="skills" id="skills">
       <h1>Skills</h1>
       <nav className="skills-filternav">
         {skillTags.map((tag) => (
-          <button key={tag} className="skills-filter" onClick={handleOnClick}>
+          <button
+            key={tag}
+            className="skills-filter"
+            onClick={handleFilterOnClick}
+          >
             {tag}
           </button>
         ))}
@@ -44,7 +51,11 @@ export function Skills() {
       <hr className="skills-separator" />
       <div className="skills-container">
         {skills.map((skill) => (
-          <div key={skill.name} className="skill">
+          <div
+            key={skill.name}
+            onClick={handleSkillOnClick(skill.doc)}
+            className="skill"
+          >
             {skill.image && <img src={skill.image} alt={skill.name} />}
             <p>{skill.name}</p>
           </div>

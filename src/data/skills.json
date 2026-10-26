@@ -2,101 +2,121 @@
   {
     "name": "JavaScript",
     "categories": ["Frontend", "Languages"],
-    "image": "https://devicons.io/devicons/icons/javascript.svg"
+    "image": "https://devicons.io/devicons/icons/javascript.svg",
+    "doc": "https://developer.mozilla.org/es/docs/Web/JavaScript"
   },
   {
     "name": "TypeScript",
     "categories": ["Frontend", "Languages"],
-    "image": "https://devicons.io/devicons/icons/typescript-icon.svg"
+    "image": "https://devicons.io/devicons/icons/typescript-icon.svg",
+    "doc": "https://www.typescriptlang.org/docs/"
   },
   {
     "name": "HTML",
     "categories": ["Frontend", "Languages"],
-    "image": "https://devicons.io/devicons/icons/html-5.svg"
+    "image": "https://devicons.io/devicons/icons/html-5.svg",
+    "doc": "https://developer.mozilla.org/es/docs/Web/HTML"
   },
   {
     "name": "Tailwind",
     "categories": ["Frontend"],
-    "image": "https://devicons.io/devicons/icons/tailwind-icon.svg"
+    "image": "https://devicons.io/devicons/icons/tailwind-icon.svg",
+    "doc": "https://tailwindcss.com/docs"
   },
   {
     "name": "CSS",
     "categories": ["Frontend", "Languages"],
-    "image": "https://devicons.io/devicons/icons/css-3-icon.svg"
+    "image": "https://devicons.io/devicons/icons/css-3-icon.svg",
+    "doc": "https://developer.mozilla.org/es/docs/Web/CSS"
   },
   {
     "name": "React",
     "categories": ["Frontend"],
-    "image": "https://devicons.io/devicons/icons/react.svg"
+    "image": "https://devicons.io/devicons/icons/react.svg",
+    "doc": "https://react.dev/learn"
   },
   {
     "name": "Vitest",
     "categories": ["Frontend"],
-    "image": "https://devicons.io/devicons/icons/vitest.svg"
+    "image": "https://devicons.io/devicons/icons/vitest.svg",
+    "doc": "https://vitest.dev/guide/"
   },
   {
     "name": "Vite",
     "categories": ["Frontend"],
-    "image": "https://devicons.io/devicons/icons/vite.svg"
+    "image": "https://devicons.io/devicons/icons/vite.svg",
+    "doc": "https://vite.dev/guide/"
   },
   {
     "name": "Node.js",
     "categories": ["Backend"],
-    "image": "https://devicons.io/devicons/icons/nodejs-icon.svg"
+    "image": "https://devicons.io/devicons/icons/nodejs-icon.svg",
+    "doc": "https://nodejs.org/docs/latest/api/"
   },
   {
     "name": "Java",
     "categories": ["Backend", "Languages"],
-    "image": "https://devicons.io/devicons/icons/java.svg"
+    "image": "https://devicons.io/devicons/icons/java.svg",
+    "doc": "https://docs.oracle.com/en/java/"
   },
   {
     "name": "Springboot 3",
     "categories": ["Backend"],
-    "image": "https://cdn.simpleicons.org/springboot"
+    "image": "https://cdn.simpleicons.org/springboot",
+    "doc": "https://docs.spring.io/spring-boot/docs/3.5.x/reference/html/"
   },
   {
     "name": "Spring Batch",
     "categories": ["Backend"],
-    "image": ""
+    "image": "",
+    "doc": "https://docs.spring.io/spring-batch/reference/"
   },
   {
     "name": "SQL",
     "categories": ["Data", "Languages"],
-    "image": ""
+    "image": "",
+    "doc": "https://www.postgresql.org/docs/current/sql.html"
   },
   {
     "name": "PostgreSQL",
     "categories": ["Data"],
-    "image": "https://devicons.io/devicons/icons/postgresql.svg"
+    "image": "https://devicons.io/devicons/icons/postgresql.svg",
+    "doc": "https://www.postgresql.org/docs/"
   },
   {
     "name": "Git",
     "categories": ["Version control"],
-    "image": "https://devicons.io/devicons/icons/git-icon.svg"
+    "image": "https://devicons.io/devicons/icons/git-icon.svg",
+    "doc": "https://git-scm.com/doc"
   },
   {
     "name": "Figma",
     "categories": ["Design"],
-    "image": "https://devicons.io/devicons/icons/figma.svg"
+    "image": "https://devicons.io/devicons/icons/figma.svg",
+    "doc": "https://help.figma.com/hc/es"
   },
   {
     "name": "Godot",
     "categories": ["Game dev"],
-    "image": "https://devicons.io/devicons/icons/godot-icon.svg"
+    "image": "https://devicons.io/devicons/icons/godot-icon.svg",
+    "doc": "https://docs.godotengine.org/es/stable/"
   },
   {
     "name": "Unity",
     "categories": ["Game dev"],
-    "image": "https://devicons.io/devicons/icons/unity.svg"
+    "image": "https://devicons.io/devicons/icons/unity.svg",
+    "doc": "https://docs.unity3d.com/Manual/index.html"
   },
   {
     "name": "C#",
     "categories": ["Game dev", "Languages"],
-    "image": "https://devicons.io/devicons/icons/c-sharp.svg"
+    "image": "https://devicons.io/devicons/icons/c-sharp.svg",
+    "doc": "https://learn.microsoft.com/es-es/dotnet/csharp/"
   },
   {
     "name": "Python",
     "categories": ["Languages"],
-    "image": "https://devicons.io/devicons/icons/python.svg"
+    "image": "https://devicons.io/devicons/icons/python.svg",
+    "doc": "https://docs.python.org/es/3/"
   }
 ]
