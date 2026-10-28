@@ -10,7 +10,7 @@ import { removeURLProtocol } from "../services/urlFormatter";
 import { formatExperienceData } from "../services/formatExperienceData";
 import { orderSkillsByCategory } from "../services/orderSkillsByCategory";
 import { sortCategories } from "../services/sortCategories";
-import { styles } from "./CurriculumStyles";
+import { styles } from "../styles/CurriculumStyles";
 
 export const Curriculum = () => {
   const { jobs } = formatExperienceData(experienceData);
