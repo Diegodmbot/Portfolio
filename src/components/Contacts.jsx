@@ -1,6 +1,6 @@
 import { useState } from "react";
 import urlData from "../data/urls.json";
-import "./Contacts.css";
+import "../styles/Contacts.css";
 
 export function Contacts() {
   const [mailCopied, setMailCopied] = useState(false);

@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "../styles/Projects.css";
 import projectsData from "../data/projects.json";
 import { useState } from "react";
 import { Links } from "./Links";

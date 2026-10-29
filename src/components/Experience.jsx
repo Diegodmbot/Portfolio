@@ -1,7 +1,7 @@
 import experienceData from "../data/experience.json";
 import PropTypes from "prop-types";
 import { formatExperienceData } from "../services/formatExperienceData.js";
-import "./Experience.css";
+import "../styles/Experience.css";
 
 function ListOfJobs({ jobList }) {
   return (

@@ -1,6 +1,6 @@
 import { useStuck } from "../hooks/useStuck";
 import { Curriculum } from "./Curriculum";
-import "./Header.css";
+import "../styles/Header.css";
 import { ThemeToggle } from "./ThemeToggle";
 import ReactPDF from "@react-pdf/renderer";
 

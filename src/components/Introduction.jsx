@@ -1,4 +1,4 @@
-import "./Introduction.css";
+import "../styles/Introduction.css";
 import miscData from "../data/misc.json";
 import urlData from "../data/urls.json";
 

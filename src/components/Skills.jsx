@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import skillsData from "../data/skills.json";
 import { sortCategories } from "../services/sortCategories";
-import "./Skills.css";
+import "../styles/Skills.css";
 
 export function Skills() {
   const [skills, setSkills] = useState(skillsData);
