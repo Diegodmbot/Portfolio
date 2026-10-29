@@ -1,3 +1,13 @@
+:root {
+  --header-margin: 10px;
+  --header-top: 5px;
+}
+
+.header-sentinel {
+  position: relative;
+  top: calc(var(--header-margin) - var(--header-top));
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -7,11 +17,11 @@
   border-style: solid;
   border-radius: 100px;
   border-color: var(--border-color);
-  margin: 10px;
+  margin: var(--header-margin);
   max-width: fit-content;
   max-height: min-content;
   position: sticky;
-  top: 5px;
+  top: var(--header-top);
   z-index: 100;
   font-size: 0.8rem;
   padding-top: 2px;
